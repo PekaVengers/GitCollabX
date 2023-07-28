@@ -5,8 +5,8 @@ import "../styles/Layout.css";
 
 export default function Layout() {
   return (
-    <div className="leftComponent">
-      <div>
+    <div>
+      <div className="leftComponent">
         <Sidebar />
       </div>
       <div className="rightComponent">
