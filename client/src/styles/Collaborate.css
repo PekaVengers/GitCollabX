@@ -1,0 +1,59 @@
+/* CSS for the collaborator container */
+.collaborator-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* CSS for each collaborator card */
+.collaborator-card {
+  display: flex;
+  align-items: center;
+  width: 450px; /* Increased width for larger cards */
+  padding: 20px; /* Increased padding for better spacing */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 20px; /* Increased margin for better spacing */
+}
+
+/* CSS for the user image */
+.user-image img {
+  width: 100px; /* Increased image size for better visibility */
+  height: 100px; /* Increased image size for better visibility */
+  border-radius: 50%;
+  margin-right: 20px; /* Added margin to create space between image and details */
+}
+
+/* CSS for the user details (name and email) */
+.user-details {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* This allows the user details to take the remaining space */
+}
+
+/* CSS for the skills container */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* Align skills to the left side */
+  margin-top: 10px; /* Added margin at the top of the skills container */
+}
+
+/* CSS for each skill card */
+.skill-card {
+  background-color: #f0f0f0; /* Light gray background */
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+/* CSS for the invite user button */
+.invite-user {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px; /* Adjusted padding for a better button size */
+  cursor: pointer;
+}
