@@ -8,7 +8,6 @@ import {
 import Select from "react-select";
 import { useState } from "react";
 import "../styles/UserProfile.css";
-import userProfile from "../assets/images/profile.png";
 import { FaEdit } from 'react-icons/fa';
 
 import { useAuth0 } from "@auth0/auth0-react";
@@ -19,6 +18,7 @@ export default function UserProfile() {
     { id: 1, name: "JavaScript" },
     { id: 2, name: "React" },
     { id: 3, name: "CSS" },
+    { id: 4, name: "Django" },
   ];
 
   const { user, isAuthenticated, isLoading } = useAuth0();
@@ -42,7 +42,7 @@ export default function UserProfile() {
   if (!isAuthenticated) {
     return navigate("/");
   }
-  
+
   if (isLoading) {
     return <div>Loading...</div>;
   }
