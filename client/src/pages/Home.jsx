@@ -1,3 +1,10 @@
+import LoginButton from "../components/LoginButton"
+
 export default function Home() {
-  return <div>Home Page Goes Here</div>
+  return <div>
+    <nav>
+      <LoginButton />
+    </nav>
+
+  </div>
 }
