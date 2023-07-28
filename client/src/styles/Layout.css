@@ -1,0 +1,12 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.leftComponent{
+    width: 20vw;
+}
+
+.rightComponent{
+    width: 80vw;
+}
