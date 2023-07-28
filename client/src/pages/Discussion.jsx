@@ -1,3 +1,5 @@
+import "../styles/Discussion.css";
+
 export default function Discussion() {
 
   const discussionMessages = [
@@ -16,18 +18,23 @@ export default function Discussion() {
 
   return (
     <div className="discuss-page-container">
-      <h1 className="discuss-page-heading">DISCUSSION</h1>
-      <div className="discussions-container">
-        {
-          discussionMessages.map((discussion, ind) => {
-            return (
-              <div key={ind} className="discussion-container">
-                {discussion}
-              </div>
-            )
-          })
-        }
-      </div>
-    </div>
+  <h1 className="discuss-page-heading">DISCUSSION</h1>
+  <div className="discussions-container">
+    {
+      discussionMessages.map((discussion, ind) => {
+        return (
+          <div key={ind} className={"discussion-container " + (ind % 2 === 0 ? "sent" : "received")}>
+            {discussion}
+          </div>
+        )
+      })
+    }
+    <div className="chat-input-container">
+    <textarea id="message-input" className="chat-input" placeholder="Type your message..."></textarea>
+    <button className="send-button" onClick="sendMessage()">Send</button>
+  </div>
+  </div>
+</div>
+
   )
 }

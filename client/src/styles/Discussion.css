@@ -1,0 +1,74 @@
+/* CSS for the discussions container (chat window) */
+.discussions-container {
+  background-color: #413f3f; /* Dark gray background for the chat window */
+  border-radius: 10px;
+  padding: 15px;
+  max-height: 80vh; /* Height set to 80% of the viewport height */
+  overflow-y: auto; /* Enable vertical scrolling if content exceeds max height */
+}
+
+/* CSS for each discussion container (message) */
+.discussion-container {
+  background-color: #d9d9d9; /* Light gray background for chat-style boxes */
+  color: #000; /* Black text color for better readability */
+  border-radius: 15px; /* Round corners for chat-style boxes */
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  width: fit-content;
+  max-width: 80%; /* Limit the maximum width of the message box */
+}
+
+/* Align sent messages to the right */
+.discussion-container.sent {
+  align-self: flex-end;
+  background-color: rgba(217, 217, 217, 0.20);
+  /* Blue background for the sender's message */
+  color: #fff; /* White text color for the sender's message */
+}
+
+/* Align received messages to the left */
+.discussion-container.received {
+  align-self: flex-start;
+  background-color: rgba(217, 217, 217, 0.20);
+  /* Dark blue background for other users' messages */
+  color: #fff; /* White text color for other users' messages */
+}
+
+/* CSS to create spacing between message boxes */
+.discussion-container + .discussion-container {
+  margin-top: 10px;
+}
+
+/* CSS for the chat input container */
+.chat-input-container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* CSS for the chat input box (textarea) */
+.chat-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px; /* Rounded corners for the textarea */
+  resize: none; /* Prevent textarea from being resized */
+  font-family: Arial, sans-serif; /* Optional: Change the font family */
+  font-size: 14px; /* Optional: Change the font size */
+  margin-right: 10px; /* Add margin between the textarea and button */
+}
+
+/* CSS for the send button */
+.send-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px; /* Rounded corners for the button */
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Optional: Add hover effect for the button */
+.send-button:hover {
+  background-color: #0056b3; /* Darker shade of blue on hover */
+}
