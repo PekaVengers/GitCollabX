@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Graduate&family=Hammersmith+One&display=swap');
+
+.sidenav{
+    width: 20vw;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #B1C2D1;
+    overflow: hidden;
+    padding-top: 2rem;
+    height: 100vh;
+}
+
+.divLogo{
+    display: flex;
+    justify-content:center
+}
+
+.logo{
+    height: 25vh;
+}
+
+.divLinks{
+    display: flex;
+    flex-direction: column;
+    padding: 2.9rem;
+    height: 75vh;
+}
+
+.links{
+    margin-bottom: 2rem;
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Graduate', cursive;
+    font-size: 1.4rem;
+}
+
+.links:hover{
+    background-color: #5885BA;
+}
