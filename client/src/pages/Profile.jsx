@@ -99,28 +99,6 @@ export default function UserProfile() {
                   </li>
                 ) : (
                   <li className="formList">
-                    Skills:
-                    <Form className="skillForm" method="post" ref={form}>
-                      <Select
-                        defaultValue={defaultOptions}
-                        options={options}
-                        isMulti
-                        name="skills"
-                        className="select-skills"
-                      />
-                      <button className="updateBtn"
-                        disabled={
-                          navigation.state === "submitting" ||
-                          navigation.state === "loading"
-                        }
-                        type="submit"
-                      >
-                        {navigation.state === "submitting" ||
-                          navigation.state === "loading"
-                          ? "Updating.."
-                          : "Update"}
-                      </button>
-                    </Form>
                   </li>
                 )}
               </ul>

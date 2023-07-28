@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Graduate&family=Hammersmith+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Graduate&family=Hammersmith+One&family=Jost:wght@400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Graduate&family=Hammersmith+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Graduate&family=Hammersmith+One&family=Jost:wght@400&display=swap");
 .profileContainer {
-    height: 100vh;
-    background-color: #7E7E7E;
+    background-color: #7e7e7e;
     display: flex;
-    justify-content: space-between;
-    width: 100vw;
+    height: 100vh;
+    justify-content: center;
     align-items: center;
     font-family: Hammersmith One;
 }
@@ -29,30 +28,30 @@
     justify-content: space-between;
 }
 
+.profileImg {
+    margin-top: 20rem;
+}
+
 .userDetails .profileText {
     width: 50vw;
     text-align: center;
-    margin-top: 4rem;
 }
 
 .profileText h1 {
+    margin: 0;
     color: #000000;
     font-size: 6rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    font-family: 'Graduate', cursive;
-}
-
-.details {
-    margin: 0 0 14rem 0;
+    font-family: "Graduate", cursive;
 }
 
 .userData li {
     list-style: none;
     font-size: 2rem;
     margin: 2rem;
-    font-family: 'Jost', sans-serif;
+    font-family: "Jost", sans-serif;
 }
 
 .userData li {
@@ -62,7 +61,6 @@
 .leftDataItem {
     width: 11rem;
 }
-
 
 .skills {
     display: flex;
@@ -77,7 +75,7 @@
     border-radius: 5px;
     background: #0b0909;
     color: #fffef9;
-    font-family: 'Jost', sans-serif;
+    font-family: "Jost", sans-serif;
 }
 
 .formList {
@@ -88,8 +86,8 @@
 .skillForm {
     display: flex;
     margin-left: 1rem;
-		align-items: center;
-		gap: 1rem;
+    align-items: center;
+    gap: 1rem;
 }
 
 .skills button {
@@ -98,19 +96,4 @@
     border-radius: 0.5rem;
     background: #fff;
     width: 3rem;
-}
-
-.select-skills {
-    width: 30vw;
-    color: hsl(0, 0%, 20%);
-		font-size: 1rem;
-}
-
-.updateBtn {
-	height: 3rem;
-	padding: 10px;
-}
-
-.updateBtn:hover {
-	cursor: pointer;
 }
