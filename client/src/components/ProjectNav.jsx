@@ -5,6 +5,7 @@ export default function ProjectNav() {
     <div className="project-nav">
       <Link to=".">Feature Tracking</Link>
       <Link to="pulls">Pull Requests</Link>
+      <Link to="codebase">Project Codebase</Link>
     </div>
   )
 }
