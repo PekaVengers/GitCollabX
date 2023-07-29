@@ -14,7 +14,6 @@ export default function PullRequests() {
       console.log(data)
       setPullRequests(data);
     }
-
     setData();
   }, [user]);
 
