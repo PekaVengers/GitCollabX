@@ -11,7 +11,7 @@ export default function FeatureTracking() {
         <div className="feature-container">
           <div className="feature-name"></div>
           <div className="feature-steps">
-            <Steps current={"Home"}>
+            <Steps>
               <div className="step-title">Pending</div>
               <div className="step-title">Development</div>
               <div className="step-title">Testing</div>
