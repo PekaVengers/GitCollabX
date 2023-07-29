@@ -7,6 +7,12 @@ import Collaborate from './pages/Collaborate';
 import UserRepository from './pages/UserRepository';
 import RepoFiles from './pages/RepoFiles';
 import ReadFile from './pages/ReadFiles';
+import Discussion from './pages/Discussion';
+import Projects from './pages/Projects';
+import ProjectLayout from './components/ProjectLayout';
+import FeatureTracking from './pages/project/FeatureTracking';
+import ProjectCollaborators from './pages/project/ProjectCollaborators';
+
 
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path="/">
@@ -17,6 +23,12 @@ const router = createBrowserRouter(createRoutesFromElements(
       <Route path="userrepo" element={<UserRepository />} />
       <Route path="repofiles" element={<RepoFiles />} />
       <Route path="readfiles" element={<ReadFile />} />
+      <Route path="discussion" element={<Discussion />} />
+      <Route path="projects" element={<Projects />} />
+      <Route path="projects/:id" element={<ProjectLayout />}>
+        <Route index element={<FeatureTracking />} />
+        <Route path="collaborators" element={<ProjectCollaborators />} />
+      </Route>
     </Route>
   </Route>
 ));

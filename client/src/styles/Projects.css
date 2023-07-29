@@ -1,0 +1,84 @@
+/* CSS for the projects page container */
+.projects-page-container {
+  margin: 20px;
+}
+
+/* CSS for the heading */
+h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* CSS for the projects container */
+.projects-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow projects to wrap to the next row */
+  justify-content: center; /* Center projects horizontally */
+  }
+
+/* CSS for each project container */
+.project-container {
+  flex: 0 0 calc(50% - 10px); /* Two projects in a row with 10px spacing between them */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  padding: 15px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  margin: 5px; /* Spacing between projects */
+  gap: 1rem;
+}
+
+/* CSS for project rows */
+.project-row-1,
+.project-row-2,
+.project-row-3 {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* CSS for project name */
+.project-name {
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.project-repo-link {
+  margin-left: auto;
+}
+
+/* CSS for the GitHub link icon */
+.project-row-1 a {
+  color: #007bff;
+  font-size: 24px;
+}
+
+/* CSS for project tech stack */
+.project-tech {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 5px 10px;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+
+/* CSS for project progress title */
+.progress-title {
+  font-size: 16px;
+}
+
+/* CSS for progress bar container */
+.progressbar-container {
+  flex: 1;
+  background-color: #ccc;
+  border-radius: 5px;
+}
+
+.progress-tracker {
+  width: 75%;
+}

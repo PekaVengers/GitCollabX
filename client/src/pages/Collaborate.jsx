@@ -1,36 +1,8 @@
 import "../styles/Collaborate.css";
+import users from "../db/collaborators.json";
 
 export default function Collaborate() {
-  const users = [
-    {
-      picture: "https://avatars.githubusercontent.com/u/75559082?v=4",
-      name: "kai",
-      nickname: "kai11",
-      email: "kai@gmail.com",
-      skills: ["Python", "Django", "React", "CSS"]
-    },
-    {
-      picture: "https://avatars.githubusercontent.com/u/75559082?v=4",
-      name: "ray",
-      nickname: "ray11",
-      email: "ray@gmail.com",
-      skills: ["Python", "Django", "React", "CSS"]
-    },
-    {
-      picture: "https://avatars.githubusercontent.com/u/75559082?v=4",
-      name: "max",
-      nickname: "max11",
-      email: "max@gmail.com",
-      skills: ["Python", "Django", "React", "CSS"]
-    },
-    {
-      picture: "https://avatars.githubusercontent.com/u/75559082?v=4",
-      name: "tyson",
-      nickname: "tyson",
-      email: "tyson@gmail.com",
-      skills: ["Python", "Django", "React", "CSS"]
-    },
-  ]
+  
   return (
     <div className="collaborator-container">
       <h1>Find Collaborators for your project</h1>

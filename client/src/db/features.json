@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "name": "Home Page",
+    "progress": 1
+  },
+  {
+    "id": 2,
+    "name": "About Page",
+    "progress": 3
+  },
+  {
+    "id": 3,
+    "name": "Contact Page",
+    "progress": 2
+  },
+  {
+    "id": 4,
+    "name": "Navbar",
+    "progress": 4
+  },
+  {
+    "id": 5,
+    "name": "Footer",
+    "progress": 2
+  }
+]
