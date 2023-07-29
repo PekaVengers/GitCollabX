@@ -1,5 +1,6 @@
 [
   {
+    "id": "1",
     "picture": "https://avatars.githubusercontent.com/u/75559082?v=4",
     "name": "kai",
     "nickname": "kai11",
@@ -7,6 +8,7 @@
     "skills": ["Python", "Django", "React", "CSS"]
   },
   {
+    "id": "2",
     "picture": "https://avatars.githubusercontent.com/u/75559082?v=4",
     "name": "ray",
     "nickname": "ray11",
@@ -14,6 +16,7 @@
     "skills": ["Python", "Django", "React", "CSS"]
   },
   {
+    "id": "3",
     "picture": "https://avatars.githubusercontent.com/u/75559082?v=4",
     "name": "max",
     "nickname": "max11",
@@ -21,6 +24,7 @@
     "skills": ["Python", "Django", "React", "CSS"]
   },
   {
+    "id": "4",
     "picture": "https://avatars.githubusercontent.com/u/75559082?v=4",
     "name": "tyson",
     "nickname": "tyson",
