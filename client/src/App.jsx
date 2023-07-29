@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Layout from './components/Layout';
 import Profile from './pages/Profile';
 import Collaborate from './pages/Collaborate';
+import Projects from './pages/Projects';
 
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path="/">
@@ -11,6 +12,7 @@ const router = createBrowserRouter(createRoutesFromElements(
     <Route element={<Layout />}>
       <Route path="profile" element={<Profile />} />
       <Route path="collaborate" element={<Collaborate />} />
+      <Route path="projects" element={<Projects />} />
     </Route>
   </Route>
 ));
