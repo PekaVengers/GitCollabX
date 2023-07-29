@@ -4,6 +4,7 @@ import {BsPersonCircle,BsFillChatLeftDotsFill,BsLink,BsShieldFillCheck} from 're
 import {HiDocumentText,HiOutlineLogout} from 'react-icons/hi'
 import {MdOutlineGroups} from 'react-icons/md'
 import { NavLink } from 'react-router-dom'
+import LogoutButton from './LogoutButton'
 
 export default function Sidebar() {
   return (
@@ -18,7 +19,7 @@ export default function Sidebar() {
         <NavLink className='links' to="/projects"><HiDocumentText/>PROJECTS</NavLink>
         <NavLink className='links' to="/"><MdOutlineGroups/>SKILL BARTERING</NavLink>
         <NavLink className='links' to="/"><BsShieldFillCheck/>BUY PREMIUM</NavLink>
-        <NavLink className='links' to="/"><HiOutlineLogout/>LOGOUT</NavLink>
+        <LogoutButton />
       </div>
     </div>
   )
