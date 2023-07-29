@@ -5,6 +5,8 @@ import Layout from './components/Layout';
 import Profile from './pages/Profile';
 import Collaborate from './pages/Collaborate';
 import Discussion from './pages/Discussion';
+import Projects from './pages/Projects';
+
 
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path="/">
@@ -13,6 +15,7 @@ const router = createBrowserRouter(createRoutesFromElements(
       <Route path="profile" element={<Profile />} />
       <Route path="collaborate" element={<Collaborate />} />
       <Route path="discussion" element={<Discussion />} />
+      <Route path="projects" element={<Projects />} />
     </Route>
   </Route>
 ));
