@@ -29,6 +29,7 @@ const ReadFile = () => {
 
     return (
         <div>
+            <h5>READ FROM A FILE</h5>
            <pre> {fileContent}</pre>
         </div>
     );

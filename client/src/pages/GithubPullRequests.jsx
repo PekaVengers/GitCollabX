@@ -27,6 +27,7 @@ const GithubPullRequests = () => {
 
     return (
         <div>
+            <h5>PULL REQUESTS</h5>
             {pullRequests.map((pr) => (
                 <div key={pr.id}>{pr.title}</div>
             ))}
