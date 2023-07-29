@@ -1,9 +1,13 @@
-import projects from "../../db/projects.json";
+import projectsData from "../../db/projects.json";
 import collaborators from "../../db/collaborators.json";
 import "../../styles/ProjectCollaborators.css";
+import { useParams } from "react-router";
 
 export default function ProjectCollaborators() {
-  const collaborator_ids = projects[0].collaborators;
+  const params = useParams();
+  const projects = JSON.parse(localStorage.getItem("projects")) || projectsData;
+  const projectId = params.id;
+  const collaborator_ids = projects[projectId-1].collaborators;
   const project_collaborators = [];
   for (let id of collaborator_ids) {
     project_collaborators.push(collaborators[id-1]);
