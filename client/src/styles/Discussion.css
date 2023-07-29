@@ -30,6 +30,7 @@
 
 /* CSS for the discussions container (chat window) */
 .discussions-container {
+  margin-bottom: 1rem;
   padding: 2rem 2rem 2rem 6rem !important;
   background-color: #413f3f; /* Dark gray background for the chat window */
   border-radius: 10px;
