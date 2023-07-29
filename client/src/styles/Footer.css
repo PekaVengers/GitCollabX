@@ -1,0 +1,17 @@
+.githubIcon {
+  font-size: 2rem;
+  color: #000000;
+}
+
+.footer {
+  background-color: #fff;
+  filter: invert(1);
+  padding: 0 5rem;
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Hammersmith One;
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
