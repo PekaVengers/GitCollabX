@@ -1,6 +1,7 @@
 import { DiGithubBadge } from "react-icons/di";
 import { Link } from "react-router-dom";
 import ProgressBar from "@ramonak/react-progress-bar";
+import "../styles/Projects.css";
 
 export default function Projects() {
 
@@ -44,10 +45,11 @@ export default function Projects() {
             return (
               <div key={project.id} className="project-container">
                 <div className="project-row-1">
-                  <h3 className="project-name">{project.name}</h3>
-                  <Link to={project.githubRepo}><DiGithubBadge /></Link>
+                  <Link className="project-name">{project.name}</Link>
+                  <Link target="_blank" className="project-repo-link" to={project.githubRepo}><DiGithubBadge /></Link>
                 </div>
               <div className="project-row-2">
+                <div className="project-tech-stack-title">Tech Stack: </div>
                 {
                   project.techStack.split(", ").map((tech, ind) => {
                     return (
@@ -59,8 +61,8 @@ export default function Projects() {
                 }
               </div>
               <div className="project-row-3">
-                <div className="progress-title">Project Completed</div>
-                <ProgressBar completed={project.percentageCompleted} />
+                <div className="progress-title">Project Progress: </div>
+                <ProgressBar className="progress-tracker" completed={project.percentageCompleted} />
               </div>
               </div>
             )
