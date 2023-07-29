@@ -1,0 +1,33 @@
+.project-nav {
+  background-color: #000;
+  height: 10vh;
+  border: 3px solid white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.projectFeatureBtn {
+  padding: 0.5rem 2rem;
+  /* border-radius: 3rem; */
+  /* border: 3px solid #fff;
+  background: #66aff0; */
+  color: #fff !important;
+  font-family: "Fredoka", sans-serif;
+  font-size: 1.5rem;
+  text-decoration: none !important;
+  text-transform: uppercase;
+}
+
+.projectFeatureBtn:hover {
+  cursor: pointer;
+  transform: scale(1.07);
+  border: 3px solid #66aff0;
+  border-radius: .625rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.projectFeatureBtn:focus {
+  border: 3px solid #66aff0;
+  transform: scale(1.07);
+}
