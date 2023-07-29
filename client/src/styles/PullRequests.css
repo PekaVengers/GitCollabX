@@ -1,0 +1,71 @@
+/* CSS for the PR page container */
+.pr-page-container {
+  margin: 20px;
+}
+
+/* CSS for the PR page title */
+.pr-page-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* CSS for the PRs container */
+.prs-container {
+  display: flex;
+  flex-direction: column; /* Display PRs one below the other */
+  align-items: center; /* Center PRs horizontally */
+}
+
+/* CSS for each PR container */
+.pr-container {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  padding: 15px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+/* CSS for PR number */
+.pr-number {
+  font-size: 18px;
+  font-weight: bold;
+  flex: 0 0 80px; /* Set a fixed width for PR number */
+  text-align: center;
+  margin-right: 10px;
+}
+
+/* CSS for PR title */
+.pr-title {
+  font-size: 18px;
+  flex: 1; /* Let the PR title fill the remaining space */
+  margin-right: 10px;
+}
+
+/* CSS for PR link */
+.pr-link {
+  flex: 0 0 100px; /* Set a fixed width for PR link */
+  text-align: center;
+}
+
+/* CSS for PR link anchor (optional) */
+.pr-link a {
+  display: block;
+  padding: 8px;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* CSS for the "Closed" PR link */
+.closed-pr-link {
+  background-color: #dc3545;
+}
+
+/* CSS for the "Review" PR link */
+.review-pr-link {
+  background-color: #007bff;
+}
