@@ -45,7 +45,7 @@ export default function Projects() {
             return (
               <div key={project.id} className="project-container">
                 <div className="project-row-1">
-                  <Link className="project-name">{project.name}</Link>
+                  <Link className="project-name" to={`/projects/${project.id}`}>{project.name}</Link>
                   <Link target="_blank" className="project-repo-link" to={project.githubRepo}><DiGithubBadge /></Link>
                 </div>
               <div className="project-row-2">
