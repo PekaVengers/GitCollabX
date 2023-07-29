@@ -18,7 +18,7 @@ export default function Sidebar() {
         <NavLink style={({isActive}) => isActive ? ({textDecoration: "none",}) : ({})} className={`sidebar-nav-link`} to="/collaborate"><BsLink className="sidebar-nav-icon"/> <span>COLLABORATE</span></NavLink>
         <NavLink style={({isActive}) => isActive ? ({textDecoration: "none",}) : ({})} className={`sidebar-nav-link`} to="/projects"><HiDocumentText className="sidebar-nav-icon"/> <span>PROJECTS</span></NavLink>
         <NavLink style={({isActive}) => isActive ? ({textDecoration: "none",}) : ({})} className={`sidebar-nav-link`} to="/"><MdOutlineGroups className="sidebar-nav-icon"/> <span>SKILL BARTERING</span></NavLink>
-        <NavLink style={({isActive}) => isActive ? ({textDecoration: "none",}) : ({})} className={`sidebar-nav-link`} to="/"><BsShieldFillCheck className="sidebar-nav-icon"/> <span>BUY PREMIUM</span></NavLink>
+        <NavLink style={({isActive}) => isActive ? ({textDecoration: "none",}) : ({})} className={`sidebar-nav-link`} to="/premium"><BsShieldFillCheck className="sidebar-nav-icon"/> <span>BUY PREMIUM</span></NavLink>
         <LogoutButton />
       </div>
     </div>

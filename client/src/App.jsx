@@ -11,6 +11,7 @@ import FeatureTracking from './pages/project/FeatureTracking';
 import ProjectCollaborators from './pages/project/ProjectCollaborators';
 import PullRequests from './pages/project/PullRequests';
 import ProjectCodebase from './pages/project/ProjectCodebase';
+import Premium from './pages/Premium';
 
 
 const router = createBrowserRouter(createRoutesFromElements(
@@ -27,6 +28,7 @@ const router = createBrowserRouter(createRoutesFromElements(
         <Route path="pulls" element={<PullRequests />} />
         <Route path="codebase" element={<ProjectCodebase />} />
       </Route>
+      <Route path="premium" element={<Premium />} />
     </Route>
   </Route>
 ));
