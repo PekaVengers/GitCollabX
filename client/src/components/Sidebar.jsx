@@ -8,17 +8,17 @@ import LogoutButton from './LogoutButton'
 
 export default function Sidebar() {
   return (
-    <div className="sidenav">
-      <div className='divLogo'>
+    <div className="sidebar-container">
+      <NavLink to="/" className='divLogo'>
         <img className="logo" src={img} alt="logo"/>
-      </div>
-      <div className='divLinks'>
-        <NavLink className='links' to="/profile"><BsPersonCircle/>PROFILE</NavLink>
-        <NavLink className='links' to="/discussion"><BsFillChatLeftDotsFill/>DISCUSSION</NavLink>
-        <NavLink className='links' to="/collaborate"><BsLink/>COLLABORATE</NavLink>
-        <NavLink className='links' to="/projects"><HiDocumentText/>PROJECTS</NavLink>
-        <NavLink className='links' to="/"><MdOutlineGroups/>SKILL BARTERING</NavLink>
-        <NavLink className='links' to="/"><BsShieldFillCheck/>BUY PREMIUM</NavLink>
+      </NavLink>
+      <div className='sidebar-nav-links'>
+        <NavLink style={({isActive}) => isActive ? ({textDecoration: "none",}) : ({})} className={`sidebar-nav-link`} to="/profile"><BsPersonCircle className="sidebar-nav-icon"/> <span>PROFILE</span></NavLink>
+        <NavLink style={({isActive}) => isActive ? ({textDecoration: "none",}) : ({})} className={`sidebar-nav-link`} to="/discussion"><BsFillChatLeftDotsFill className="sidebar-nav-icon"/> <span>DISCUSSION</span></NavLink>
+        <NavLink style={({isActive}) => isActive ? ({textDecoration: "none",}) : ({})} className={`sidebar-nav-link`} to="/collaborate"><BsLink className="sidebar-nav-icon"/> <span>COLLABORATE</span></NavLink>
+        <NavLink style={({isActive}) => isActive ? ({textDecoration: "none",}) : ({})} className={`sidebar-nav-link`} to="/projects"><HiDocumentText className="sidebar-nav-icon"/> <span>PROJECTS</span></NavLink>
+        <NavLink style={({isActive}) => isActive ? ({textDecoration: "none",}) : ({})} className={`sidebar-nav-link`} to="/"><MdOutlineGroups className="sidebar-nav-icon"/> <span>SKILL BARTERING</span></NavLink>
+        <NavLink style={({isActive}) => isActive ? ({textDecoration: "none",}) : ({})} className={`sidebar-nav-link`} to="/"><BsShieldFillCheck className="sidebar-nav-icon"/> <span>BUY PREMIUM</span></NavLink>
         <LogoutButton />
       </div>
     </div>

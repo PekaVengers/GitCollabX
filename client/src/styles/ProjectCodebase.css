@@ -2,7 +2,7 @@
 .codebase-page {
   display: flex;
   gap: 20px;
-  height: 100vh; /* Set full height of viewport */
+  height: 100%; /* Set full height of viewport */
 }
 
 /* CSS for the file tree */
@@ -14,7 +14,7 @@
   border-radius: 5px;
   font-family: 'Courier New', monospace;
   overflow: auto; /* Enable scrolling when content exceeds max-height */
-  max-height: 100vh; /* Set max height of viewport */
+  height: 90.95vh; /* Set max height of viewport */
 }
 
 /* CSS for the file name container */
@@ -52,7 +52,7 @@
   line-height: 1.5;
   font-size: 14px;
   overflow: auto; /* Enable scrolling when content exceeds max-height */
-  max-height: 100vh; /* Set max height of viewport */
+  max-height: 91vh; /* Set max height of viewport */
   word-wrap: break-word; /* Wrap words to next line */
 }
 

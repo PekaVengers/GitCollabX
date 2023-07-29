@@ -1,41 +1,54 @@
-@import url('https://fonts.googleapis.com/css2?family=Graduate&family=Hammersmith+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Graduate&family=Hammersmith+One&display=swap");
 
-.sidenav{
+.sidebar-container {
     width: 20vw;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #B1C2D1;
+    background-color: #b1c2d1;
     overflow: hidden;
     padding-top: 2rem;
     height: 100vh;
 }
 
-.divLogo{
+.divLogo {
     display: flex;
-    justify-content:center
+    justify-content: center;
 }
 
-.logo{
+.logo {
     height: 25vh;
 }
 
-.divLinks{
+.sidebar-nav-links {
     display: flex;
     flex-direction: column;
-    padding: 2.9rem;
-    height: 75vh;
+    padding: 3rem;
+    align-items: flex-start;
+    justify-content: center;
 }
 
-.links{
+.sidebar-nav-link {
     margin-bottom: 2rem;
-    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
     color: #000000;
-    font-family: 'Graduate', cursive;
+    font-family: "Graduate", cursive;
     font-size: 1.4rem;
 }
 
-.links:hover{
-    background-color: #5885BA;
+.sidebar-nav-link:hover {
+  text-decoration: none;
 }
+
+
+.sidebar-nav-icon {
+  height: 100%;
+}
+
+
+
+
