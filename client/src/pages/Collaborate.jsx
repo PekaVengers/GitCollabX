@@ -4,11 +4,11 @@ import users from "../db/collaborators.json";
 export default function Collaborate() {
   
   return (
-    <div className="collaborator-container">
+    <div className="collaborate-container">
       <h1>Find Collaborators for your project</h1>
       {users.map((user, index) => {
         return (
-          <div key={index} className="collaborator-card">
+          <div key={index} className="collaborate-card">
             <div className="row">
               <div className="user-image">
                 <img src={user.picture} alt={user.name} />

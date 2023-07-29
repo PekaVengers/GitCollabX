@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Graduate&display=swap");
 
 .discuss-page-container {
-  height: 93vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
+  padding: 1rem;
   background-color: #7E7E7E;
 }
 
@@ -30,12 +31,11 @@
 
 /* CSS for the discussions container (chat window) */
 .discussions-container {
-  margin-bottom: 1rem;
   padding: 2rem 2rem 2rem 6rem !important;
   background-color: #413f3f; /* Dark gray background for the chat window */
   border-radius: 10px;
   padding: 15px;
-  max-height: 100%;
+  min-height: 100%;
   max-width: 80%;
   overflow-y: auto; /* Enable vertical scrolling if content exceeds max height */
 }

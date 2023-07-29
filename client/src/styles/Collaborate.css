@@ -1,15 +1,19 @@
 /* CSS for the collaborator container */
-.collaborator-container {
+.collaborate-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 2rem;
+  height: 100%;
 }
 
 /* CSS for each collaborator card */
-.collaborator-card {
+.collaborate-card {
   display: flex;
   align-items: center;
-  width: 450px; /* Increased width for larger cards */
+  justify-content: center;
+  width: 60%; /* Increased width for larger cards */
+  gap: 2rem;
   padding: 20px; /* Increased padding for better spacing */
   border: 1px solid #ccc;
   border-radius: 10px;

@@ -18,11 +18,10 @@
   /* CSS for the outlet content */
   .outlet-content {
     flex: 1; /* Make the outlet take up the remaining vertical space */
-    padding: 20px; /* Add some padding to create space between the outlet and footer */
   }
   
   /* CSS for the footer */
   .footer-container {
-    height: 4rem;
+    height: 50px;
   }
   
