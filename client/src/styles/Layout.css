@@ -7,6 +7,22 @@
     width: 20vw;
 }
 
-.rightComponent{
+/* CSS for the main content container */
+.main-content {
+    display: flex;
+    flex-direction: column;
     width: 80vw;
-}
+    min-height: 100vh; /* Set minimum height to fill the viewport */
+  }
+  
+  /* CSS for the outlet content */
+  .outlet-content {
+    flex: 1; /* Make the outlet take up the remaining vertical space */
+    padding: 20px; /* Add some padding to create space between the outlet and footer */
+  }
+  
+  /* CSS for the footer */
+  .footer-container {
+    height: 4rem;
+  }
+  

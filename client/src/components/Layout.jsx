@@ -9,11 +9,11 @@ export default function Layout() {
       <div className="leftComponent">
         <Sidebar />
       </div>
-      <div className="rightComponent">
-        <div>
+      <div className="main-content">
+        <div className="outlet-content">
           <Outlet />
         </div>
-        <div>
+        <div className="footer-container">
           <Footer/>
         </div>
       </div>
