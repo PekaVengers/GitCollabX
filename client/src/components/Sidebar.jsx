@@ -1,7 +1,7 @@
 import '../styles/Sidebar.css'
 import img from '../assets/images/logo.png'
 import {BsPersonCircle,BsFillChatLeftDotsFill,BsLink,BsShieldFillCheck} from 'react-icons/bs'
-import {HiDocumentText,HiOutlineLogout} from 'react-icons/hi'
+import {HiDocumentText} from 'react-icons/hi'
 import {MdOutlineGroups} from 'react-icons/md'
 import { NavLink } from 'react-router-dom'
 import LogoutButton from './LogoutButton'

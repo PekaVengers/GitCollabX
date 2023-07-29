@@ -1,0 +1,71 @@
+/* CSS for the codebase page container */
+.codebase-page {
+  display: flex;
+  gap: 20px;
+  height: 100vh; /* Set full height of viewport */
+}
+
+/* CSS for the file tree */
+.file-tree {
+  flex: 1;
+  background-color: #2b2b2b;
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  font-family: 'Courier New', monospace;
+  overflow: auto; /* Enable scrolling when content exceeds max-height */
+  max-height: 100vh; /* Set max height of viewport */
+}
+
+/* CSS for the file name container */
+.file-name-container {
+  margin-bottom: 10px;
+}
+
+/* CSS for the file name button */
+.file-name {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 5px;
+  width: 100%;
+  text-align: left;
+  outline: none;
+}
+
+/* CSS for the file name button on hover */
+.file-name:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* CSS for the file editor */
+.file-editor {
+  flex: 2;
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  font-family: 'Courier New', monospace;
+  white-space: pre-wrap; /* Wrap content to next line */
+  line-height: 1.5;
+  font-size: 14px;
+  overflow: auto; /* Enable scrolling when content exceeds max-height */
+  max-height: 100vh; /* Set max height of viewport */
+  word-wrap: break-word; /* Wrap words to next line */
+}
+
+/* CSS for the file editor scrollbar */
+.file-editor::-webkit-scrollbar {
+  width: 8px;
+}
+
+.file-editor::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 5px;
+}
+
+.file-editor::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
