@@ -2,11 +2,12 @@ import { Octokit } from '@octokit/rest';
 import { useState, useEffect } from 'react';
 
 const GithubPullRequests = () => {
+    const READ_KEY = import.meta.env.VITE_GH_AUTH_KEY;
     const [pullRequests, setPullRequests] = useState([]);
 
     useEffect(() => {
         const fetchPullRequests = async () => {
-            const octokit = new Octokit({ auth: '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' });
+            const octokit = new Octokit({ auth: READ_KEY });
             const username = 'anmode';
             const repo = 'grabtern-frontend';
 

@@ -12,6 +12,7 @@ import Projects from './pages/Projects';
 import ProjectLayout from './components/ProjectLayout';
 import FeatureTracking from './pages/project/FeatureTracking';
 import ProjectCollaborators from './pages/project/ProjectCollaborators';
+import GithubPullRequests from "./pages/GithubPullRequests"
 
 
 const router = createBrowserRouter(createRoutesFromElements(
@@ -23,6 +24,7 @@ const router = createBrowserRouter(createRoutesFromElements(
       <Route path="userrepo" element={<UserRepository />} />
       <Route path="repofiles" element={<RepoFiles />} />
       <Route path="readfiles" element={<ReadFile />} />
+      <Route path="pr" element={<GithubPullRequests />} />
       <Route path="discussion" element={<Discussion />} />
       <Route path="projects" element={<Projects />} />
       <Route path="projects/:id" element={<ProjectLayout />}>
