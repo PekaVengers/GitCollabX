@@ -9,6 +9,7 @@ import Projects from './pages/Projects';
 import ProjectLayout from './components/ProjectLayout';
 import FeatureTracking from './pages/project/FeatureTracking';
 import ProjectCollaborators from './pages/project/ProjectCollaborators';
+import PullRequests from './pages/project/PullRequests';
 
 
 const router = createBrowserRouter(createRoutesFromElements(
@@ -22,6 +23,7 @@ const router = createBrowserRouter(createRoutesFromElements(
       <Route path="projects/:id" element={<ProjectLayout />}>
         <Route index element={<FeatureTracking />} />
         <Route path="collaborators" element={<ProjectCollaborators />} />
+        <Route path="pulls" element={<PullRequests />} />
       </Route>
     </Route>
   </Route>

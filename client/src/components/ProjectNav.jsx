@@ -1,5 +1,10 @@
+import { Link } from "react-router-dom"
+
 export default function ProjectNav() {
   return (
-    <div>Navbar of the project</div>
+    <div className="project-nav">
+      <Link to=".">Feature Tracking</Link>
+      <Link to="pulls">Pull Requests</Link>
+    </div>
   )
 }
