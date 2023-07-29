@@ -1,7 +1,6 @@
 import "../styles/Discussion.css";
 
 export default function Discussion() {
-
   const discussionMessages = [
     "Hi everyone! I'm a web developer with experience in React and Node.js. Is anyone interested in collaborating on a web app project?",
     "Hey there! I'm a UX/UI designer. I'd love to join your team and work on creating an intuitive and visually appealing interface for the app.",
@@ -12,29 +11,41 @@ export default function Discussion() {
     "That works for me! I'll create a Trello board to keep track of the tasks and progress. We can all collaborate there.",
     "Awesome! I'll start sketching some wireframes and share them on the Trello board before the call.",
     "I'll research the target audience and competitors to come up with some compelling content ideas.",
-    "Meanwhile, I'll set up the project repository on GitHub and share the link with everyone.\n\nLet's have a quick sync-up call before starting the project to clarify any doubts and plan the next steps. Looking forward to working with all of you! 🚀"
+    "Meanwhile, I'll set up the project repository on GitHub and share the link with everyone.\n\nLet's have a quick sync-up call before starting the project to clarify any doubts and plan the next steps. Looking forward to working with all of you! 🚀",
   ];
-  
 
   return (
     <div className="discuss-page-container">
-  <h1 className="discuss-page-heading">DISCUSSION</h1>
-  <div className="discussions-container">
-    {
-      discussionMessages.map((discussion, ind) => {
-        return (
-          <div key={ind} className={"discussion-container " + (ind % 2 === 0 ? "sent" : "received")}>
-            {discussion}
+      <div className="heading">
+        <h1 className="discuss-page-heading">DISCUSSION</h1>
+      </div>
+      <div className="discussContainer">
+        <div className="discussions-container">
+          {discussionMessages.map((discussion, ind) => {
+            return (
+              <div
+                key={ind}
+                className={
+                  "discussion-container " +
+                  (ind % 2 === 0 ? "sent" : "received")
+                }
+              >
+                {discussion}
+              </div>
+            );
+          })}
+          <div className="chat-input-container">
+            <textarea
+              id="message-input"
+              className="chat-input"
+              placeholder="Type your message..."
+            ></textarea>
+            <button className="send-button" onClick="sendMessage()">
+              Send
+            </button>
           </div>
-        )
-      })
-    }
-    <div className="chat-input-container">
-    <textarea id="message-input" className="chat-input" placeholder="Type your message..."></textarea>
-    <button className="send-button" onClick="sendMessage()">Send</button>
-  </div>
-  </div>
-</div>
-
-  )
+        </div>
+      </div>
+    </div>
+  );
 }
