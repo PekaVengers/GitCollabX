@@ -10,6 +10,7 @@ import ProjectLayout from './components/ProjectLayout';
 import FeatureTracking from './pages/project/FeatureTracking';
 import ProjectCollaborators from './pages/project/ProjectCollaborators';
 import PullRequests from './pages/project/PullRequests';
+import Premium from './pages/Premium';
 
 
 const router = createBrowserRouter(createRoutesFromElements(
@@ -20,6 +21,7 @@ const router = createBrowserRouter(createRoutesFromElements(
       <Route path="collaborate" element={<Collaborate />} />
       <Route path="discussion" element={<Discussion />} />
       <Route path="projects" element={<Projects />} />
+      <Route path='premium' element={<Premium/>}/>
       <Route path="projects/:id" element={<ProjectLayout />}>
         <Route index element={<FeatureTracking />} />
         <Route path="collaborators" element={<ProjectCollaborators />} />

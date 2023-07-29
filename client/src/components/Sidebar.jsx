@@ -1,7 +1,7 @@
 import '../styles/Sidebar.css'
 import img from '../assets/images/logo.png'
 import {BsPersonCircle,BsFillChatLeftDotsFill,BsLink,BsShieldFillCheck} from 'react-icons/bs'
-import {HiDocumentText,HiOutlineLogout} from 'react-icons/hi'
+import {HiDocumentText} from 'react-icons/hi'
 import {MdOutlineGroups} from 'react-icons/md'
 import { NavLink } from 'react-router-dom'
 import LogoutButton from './LogoutButton'
@@ -18,7 +18,7 @@ export default function Sidebar() {
         <NavLink className='links' to="/collaborate"><BsLink/>COLLABORATE</NavLink>
         <NavLink className='links' to="/projects"><HiDocumentText/>PROJECTS</NavLink>
         <NavLink className='links' to="/"><MdOutlineGroups/>SKILL BARTERING</NavLink>
-        <NavLink className='links' to="/"><BsShieldFillCheck/>BUY PREMIUM</NavLink>
+        <NavLink className='links' to="/premium"><BsShieldFillCheck/>BUY PREMIUM</NavLink>
         <LogoutButton />
       </div>
     </div>
