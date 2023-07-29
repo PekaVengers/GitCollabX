@@ -1,0 +1,78 @@
+/* CSS for the project collab page container */
+.project-collab-page {
+  margin: 20px;
+}
+
+/* CSS for the collab page title */
+.collab-page-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* CSS for the collaborators container */
+.collaborators-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* CSS for each collaborator container */
+.collaborator-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 60%;
+  background-color: #f2f2f2;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+/* CSS for collaborator profile picture */
+.collaborator-profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+/* CSS for collaborator details */
+.collaborator-details {
+  flex: 1;
+}
+
+/* CSS for collaborator name */
+.collaborator-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* CSS for collaborator email */
+.collaborator-email {
+  font-size: 14px;
+  color: #777;
+}
+
+/* CSS for remove collaborator button */
+.remove-collaborator {
+  display: flex;
+  align-items: center;
+}
+
+/* CSS for remove collaborator button */
+.remove-collab-btn {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* CSS for remove collaborator button on hover */
+.remove-collab-btn:hover {
+  background-color: #c82333;
+}
