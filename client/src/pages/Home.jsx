@@ -21,10 +21,8 @@ export default function Home() {
         <div className="content">PREMIUM</div>
       </main>
       <footer>
-        <div className="footer">
-          <a className="ghIcon" href="https://github.com/PekaVengers/GitCollabX"><BsGithub className="githubIcon" /></a>
-          <span className="copyright">©2023 | ALL RIGHTS RESERVED</span>
-        </div>
+          <a className="ghIconHome" href="https://github.com/PekaVengers/GitCollabX"><BsGithub className="githubIcon" /></a>
+          <span className="copyrightHome">©2023 | ALL RIGHTS RESERVED</span>
       </footer>
     </div>
   );
