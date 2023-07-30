@@ -52,6 +52,7 @@ export default function UserProfile() {
       {
       isAuthenticated &&
         <>
+
           <div className="profileImg">
             <img className="profile" src={user.picture} alt="userProfile" />
           </div>

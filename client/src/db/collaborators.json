@@ -5,7 +5,7 @@
     "name": "kai",
     "nickname": "kai11",
     "email": "kai@gmail.com",
-    "skills": ["Python", "Django", "React", "CSS"]
+    "skills": ["React", "CSS", "HTML"]
   },
   {
     "id": "2",
@@ -13,7 +13,7 @@
     "name": "ray",
     "nickname": "ray11",
     "email": "ray@gmail.com",
-    "skills": ["Python", "Django", "React", "CSS"]
+    "skills": ["Python", "Django", "HTML"]
   },
   {
     "id": "3",
@@ -21,7 +21,7 @@
     "name": "max",
     "nickname": "max11",
     "email": "max@gmail.com",
-    "skills": ["Python", "Django", "React", "CSS"]
+    "skills": ["HTML", "CSS", "Javascript"]
   },
   {
     "id": "4",
@@ -29,6 +29,6 @@
     "name": "tyson",
     "nickname": "tyson",
     "email": "tyson@gmail.com",
-    "skills": ["Python", "Django", "React", "CSS"]
+    "skills": ["Angular", "Tailwind", "HTML"]
   }
 ]

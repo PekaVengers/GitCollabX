@@ -4,31 +4,31 @@
     "name": "Project 1",
     "githubRepo": "ideator",
     "techStack": "HTML, CSS, JavaScript",
-    "percentageCompleted": "50",
+    "percentageCompleted": "70",
     "collaborators": ["3", "2"]
   },
   {
     "id": "2",
-    "name": "Project 1",
+    "name": "Project 2",
     "githubRepo": "ideator",
-    "techStack": "HTML, CSS, JavaScript",
-    "percentageCompleted": "5 0",
+    "techStack": "React, Bootstrap",
+    "percentageCompleted": "30",
     "collaborators": ["1", "2"]
   },
   {
     "id": "3",
-    "name": "Project 1",
+    "name": "Project 3",
     "githubRepo": "ideator",
-    "techStack": "HTML, CSS, JavaScript",
-    "percentageCompleted": "50",
+    "techStack": "Angular, Tailwind",
+    "percentageCompleted": "20",
     "collaborators": ["1", "3"]
   },
   {
     "id": "4",
-    "name": "Project 1",
+    "name": "Project 4",
     "githubRepo": "ideator",
-    "techStack": "HTML, CSS, JavaScript",
-    "percentageCompleted": "50",
+    "techStack": "Django, Machine Learning",
+    "percentageCompleted": "80",
     "collaborators": ["1"]
   }
 ]
