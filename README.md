@@ -59,7 +59,7 @@ We welcome contributions from the open-source community to make GitCollabX even 
 
 8. **Create a Pull Request**
 
-   Go to your forked repository on GitHub, and you should see a "Compare & pull request" button. Click on it to create a pull request (PR) from your branch to the main Ideator repository.
+   Go to your forked repository on GitHub, and you should see a "Compare & pull request" button. Click on it to create a pull request (PR) from your branch to the main GitCollabX repository.
 
 ## The Team
 
