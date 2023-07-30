@@ -1,3 +1,7 @@
+img.profile{
+  border-radius: 50%;
+}
+
 /* CSS for the projects page container */
 .projects-page-container {
   margin: 20px;
