@@ -1,11 +1,12 @@
 # GitCollabX
 
-<img src="https://github.com/PekaVengers/GitCollabX/assets/91741581/58c93169-701f-4c2b-910a-725750e24f73" alt="GitCollabX Logo" width="100">
+<p align="center">
+    <img src="https://github.com/PekaVengers/GitCollabX/assets/91741581/58c93169-701f-4c2b-910a-725750e24f73" alt="GitCollabX Logo" width="150" height="200">
+</p>
 
 GitCollabX is a platform designed to revolutionize the way freelancers collaborate on projects. It aims to bring freelancers together, facilitate seamless project management using GitHub, and foster a supportive community that encourages knowledge sharing and professional growth.
 
 ## How to Contribute
-
 
 We welcome contributions from the open-source community to make GitCollabX even better! If you want to contribute to the project, follow these simple steps:
 
@@ -72,3 +73,13 @@ GitCollabX is developed by a passionate and talented team dedicated to fostering
 ## Thanks for Visiting!
 
 We sincerely thank you for checking out GitCollabX. Your interest and support mean a lot to us. Happy hacking, and we hope GitCollabX helps you create amazing projects for your next hackathon!
+
+## Acknowledgments
+
+We would like to express our gratitude to the open-source community for their valuable contributions and support in making GitCollabX a reality.
+
+## License
+
+GitCollabX is licensed under the MIT License. Feel free to use, modify, and distribute the code in compliance with the terms of the license.
+
+Thank you for your interest in GitCollabX! We hope it enables you to collaborate efficiently and achieve great success in your freelance projects. Happy collaborating!
