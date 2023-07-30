@@ -3,7 +3,7 @@
     height: 100vh;
 }
 
-.leftComponent{
+.leftComponent {
     width: 20vw;
 }
 
@@ -13,17 +13,16 @@
     flex-direction: column;
     width: 80vw;
     min-height: 100vh; /* Set minimum height to fill the viewport */
-  }
-  
-  /* CSS for the outlet content */
-  .outlet-content {
+}
+
+/* CSS for the outlet content */
+.main-outlet-content {
     flex: 1; /* Make the outlet take up the remaining vertical space */
     margin: 0;
     padding: 0;
-  }
-  
-  /* CSS for the footer */
-  .footer-container {
+}
+
+/* CSS for the footer */
+.footer-container {
     height: 50px;
-  }
-  
+}

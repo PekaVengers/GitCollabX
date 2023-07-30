@@ -10,7 +10,7 @@ export default function Layout() {
         <Sidebar />
       </div>
       <div className="main-content">
-        <div className="outlet-content">
+        <div className="main-outlet-content">
           <Outlet />
         </div>
         <div className="footer-container">
