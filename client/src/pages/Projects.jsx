@@ -52,15 +52,15 @@ export default function Projects() {
   }
 
   function handleChange(event) {
-    setFormData(prevData => ({...prevData, [event.target.name]: event.target.value}));
+    setFormData(prevData => ({ ...prevData, [event.target.name]: event.target.value }));
   }
 
   function handleSelectRepo(value) {
-    setFormData(prevData => ({...prevData, "githubRepo": value.value}));
+    setFormData(prevData => ({ ...prevData, "githubRepo": value.value }));
   }
   return (
     <div className="projects-page-container">
-      <h1 className="projects-page-title">Your Projects</h1>
+      <h1 className="projects-page-title">{showForm ? "Add Project" : "Your Projects"}</h1>
       {
         !showForm
           ? <>
@@ -96,11 +96,14 @@ export default function Projects() {
               }
             </div>
           </>
-          : <form onSubmit={handleSubmit}>
-            <input type="text" name="name" value={formData.name} onChange={handleChange} placeholder="Project Name"/>
-            <input type="text" name="techStack" value={formData.techStack} onChange={handleChange} placeholder="Tech Stack"/>
-            <Select options={options} onChange={handleSelectRepo} />
-            <button type="submit">Create Project</button>
+          : <form className="create-project-form" onSubmit={handleSubmit}>
+            <input className="create-project-input" type="text" name="name" value={formData.name} onChange={handleChange} placeholder="Project Name" />
+            <input className="create-project-input" type="text" name="techStack" value={formData.techStack} onChange={handleChange} placeholder="Tech Stack" />
+            <Select className="create-project-input" options={options} onChange={handleSelectRepo} />
+            <div className="projects-btns">
+              <button className="create-project-btn" type="submit">Create</button>
+              <button className="cancel-btn" type="submit" onClick={() => setShowForm(false)}>Cancel</button>
+            </div>
           </form>
       }
     </div>

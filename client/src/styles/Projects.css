@@ -83,3 +83,92 @@
 .progress-tracker {
   width: 75%;
 }
+
+/* Form Styling */
+/* CSS for the create project form */
+.create-project-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* CSS for create project input fields */
+.create-project-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* CSS for the select dropdown */
+.react-select-container {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.projects-btns {
+  display: flex;
+  gap: 2rem;
+}
+
+/* CSS for the create project button */
+.create-project-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.create-project-btn:hover {
+  background-color: #0056b3;
+}
+
+/* CSS for the cancel button */
+.cancel-btn {
+  background-color: #f2f2f2;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.cancel-btn:hover {
+  background-color: #d9d9d9;
+}
+
+/* CSS for the add project button */
+.add-project-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 45%;
+}
+
+.add-project-btn:hover {
+  background-color: #0056b3;
+}
+
+.add-project-btn:focus {
+  outline: none; /* Remove the default focus outline */
+}
+
+.add-project-btn:active {
+  background-color: #004080; /* Darken the color when button is clicked */
+}
+
