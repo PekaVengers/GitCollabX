@@ -85,7 +85,6 @@ a.ghIconHome{
   padding: 2rem 10rem;
   width: 100%;
   background-color: #7e7e7e;
-  border: 1px solid red;
   justify-content: space-around;
 }
 
@@ -106,6 +105,7 @@ a.ghIconHome{
 .hero-section h1{
   font-size: 45px;
   color: #000000;
+  text-align: left;
 }
 
 .hero-section p{
