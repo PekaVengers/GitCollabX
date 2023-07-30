@@ -1,13 +1,8 @@
-
-*{
-    box-sizing: border-box;
-  }
-
   .outlet-content{
     background-color: #7E7E7E;
   }
   
-  .row {
+  .row-pay {
     display: flex;
     flex-wrap: wrap;
     margin: 1rem 7rem;

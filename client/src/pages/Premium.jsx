@@ -6,11 +6,11 @@ import { FaAddressCard, FaCity } from "react-icons/fa";
 
 const Premium = () => {
   return (
-    <div className="row">
+    <div className="row-pay">
       <div className="col-75">
         <div className="container">
           <form method="post" className="paymentForm">
-            <div className="row">
+            <div className="row-pay">
               <div className="col-50">
                 <h4 className="headText">Billing Address</h4>
                 <label htmlFor="fname">
@@ -45,7 +45,7 @@ const Premium = () => {
                 </label>
                 <input type="text" id="city" name="city" placeholder="City" />
 
-                <div className="row">
+                <div className="row-pay">
                   <div className="col-50">
                     <label htmlFor="state">State</label>
                     <input
@@ -104,7 +104,7 @@ const Premium = () => {
                   name="expmonth"
                   placeholder="Expiry Month"
                 />
-                <div className="row">
+                <div className="row-pay">
                   <div className="col-50">
                     <label htmlFor="expyear">Exp Year</label>
                     <input
