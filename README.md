@@ -1,7 +1,7 @@
 # GitCollabX
 
 <p align="center">
-    <img src="https://github.com/PekaVengers/GitCollabX/assets/91741581/58c93169-701f-4c2b-910a-725750e24f73" alt="GitCollabX Logo" width="150" height="200">
+    <img src="https://github.com/PekaVengers/GitCollabX/assets/91741581/58c93169-701f-4c2b-910a-725750e24f73" alt="GitCollabX Logo" width="200" height="200">
 </p>
 
 GitCollabX is a platform designed to revolutionize the way freelancers collaborate on projects. It aims to bring freelancers together, facilitate seamless project management using GitHub, and foster a supportive community that encourages knowledge sharing and professional growth.
