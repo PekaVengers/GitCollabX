@@ -3,10 +3,34 @@ import { Link } from "react-router-dom";
 import ProgressBar from "@ramonak/react-progress-bar";
 import "../styles/Projects.css";
 import projects from "../db/projects.json"
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useAuth0 } from "@auth0/auth0-react";
+import getRepos from "../utils/getRepos";
+import Select from "react-select";
 
 export default function Projects() {
   const [currentProjects, setCurrentProjects] = useState(JSON.parse(localStorage.getItem("projects")) || projects);
+
+  const { user } = useAuth0();
+  const [userRepos, setUserRepos] = useState([]);
+  let options = [];
+
+  useEffect(() => {
+    async function setData() {
+      const data = await getRepos(user.nickname);
+      setUserRepos(data);
+    }
+    setData();
+  }, [user]);
+
+  if (userRepos.length > 0) {
+    options = userRepos.map(repo => ({
+      value: repo.name,
+      label: repo.name,
+    }));
+  }
+
+
   const [showForm, setShowForm] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
@@ -19,7 +43,6 @@ export default function Projects() {
   function handleSubmit(event) {
     event.preventDefault();
     formData["id"] = currentProjects.length + 1;
-    console.log(formData);
     localStorage.setItem("projects", JSON.stringify([...currentProjects, formData]));
     setCurrentProjects(JSON.parse(localStorage.getItem("projects")));
     formData["name"] = "";
@@ -31,9 +54,13 @@ export default function Projects() {
   function handleChange(event) {
     setFormData(prevData => ({...prevData, [event.target.name]: event.target.value}));
   }
+
+  function handleSelectRepo(value) {
+    setFormData(prevData => ({...prevData, "githubRepo": value.value}));
+  }
   return (
     <div className="projects-page-container">
-      <h1>Your Projects</h1>
+      <h1 className="projects-page-title">Your Projects</h1>
       {
         !showForm
           ? <>
@@ -72,7 +99,7 @@ export default function Projects() {
           : <form onSubmit={handleSubmit}>
             <input type="text" name="name" value={formData.name} onChange={handleChange} placeholder="Project Name"/>
             <input type="text" name="techStack" value={formData.techStack} onChange={handleChange} placeholder="Tech Stack"/>
-            <input type="text" name="githubRepo" value={formData.githubRepo} onChange={handleChange} placeholder="GitHub Repository"/>
+            <Select options={options} onChange={handleSelectRepo} />
             <button type="submit">Create Project</button>
           </form>
       }
