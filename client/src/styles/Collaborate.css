@@ -7,6 +7,11 @@
   height: 100%;
 }
 
+.collaborate-heading {
+  color: white;
+}
+
+
 /* CSS for each collaborator card */
 .collaborate-card {
   display: flex;
@@ -16,6 +21,8 @@
   gap: 2rem;
   padding: 20px; /* Increased padding for better spacing */
   border: 1px solid #ccc;
+  background-color: #413f3f;;
+  color: white;
   border-radius: 10px;
   margin-bottom: 20px; /* Increased margin for better spacing */
 }
@@ -32,6 +39,7 @@
 .user-details {
   display: flex;
   flex-direction: column;
+  font-size: 1rem;
   flex: 1; /* This allows the user details to take the remaining space */
 }
 
@@ -58,6 +66,8 @@
   color: #fff;
   border: none;
   border-radius: 5px;
-  padding: 10px 20px; /* Adjusted padding for a better button size */
+  padding: 10px; /* Adjusted padding for a better button size */
   cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;  
 }

@@ -37,14 +37,18 @@
     text-align: center;
 }
 
-.profileText h1 {
+.profile-heading {
     margin: 0;
-    color: #000000;
+    color: white;
     font-size: 6rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     font-family: "Graduate", cursive;
+}
+
+.leftDataItem, .dataItem {
+    color: white;
 }
 
 .userData li {

@@ -16,8 +16,8 @@
   align-items: center;
 }
 
-.heading h1 {
-  color: #000;
+.discuss-page-heading {
+  color: white;
   font-family: Graduate;
   font-size: 4rem;
 }
