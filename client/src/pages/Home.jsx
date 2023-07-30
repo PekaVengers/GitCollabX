@@ -2,6 +2,7 @@ import LoginButton from "../components/LoginButton";
 import "../styles/Home.css";
 import { BsGithub } from "react-icons/bs";
 import logo from "../assets/images/logo.png";
+import img from '../assets/images/FreelancingNetworking.png'
 
 export default function Home() {
   return (
@@ -12,6 +13,19 @@ export default function Home() {
         </div>
         <LoginButton className="loginBtn" />
       </nav>
+      <div className="container">
+        <div className="image">
+          <img src={img} alt="img" />
+        </div>
+        <div className="hero-section">
+          <h1>Connecting Freelancers, Empowering Collaboration</h1>
+          <p>Welcome to GitCollabX, the platform that brings freelancers together to collaborate on projects with ease. Join our community and take your freelance endeavors to new heights.</p>
+        </div>
+      </div>
+      <div className="features">
+        <h2 className="features-heading">Features</h2>
+      </div>
+      
       <main>
         <div className="content">COLLABORATE</div>
         <div className="content">DISCUSSION</div>
