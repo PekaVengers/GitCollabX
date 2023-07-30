@@ -42,7 +42,13 @@ export default function Discussion() {
                   (ind % 2 === 0 ? "sent" : "received")
                 }
               >
+                <div className="discussionAvatar">
+                  
+                </div>
+                <div className="discussionMessage">
                 {discussion}
+                </div>
+                
               </div>
             );
           })}
