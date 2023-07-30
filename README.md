@@ -1,10 +1,11 @@
 # GitCollabX
 
-<img src="../GitCollabX/client/src/assets/images/logo.png" alt="Ideator Logo" width="100">
+<img src="https://github.com/PekaVengers/GitCollabX/assets/91741581/58c93169-701f-4c2b-910a-725750e24f73" alt="GitCollabX Logo" width="100">
 
 GitCollabX is a platform designed to revolutionize the way freelancers collaborate on projects. It aims to bring freelancers together, facilitate seamless project management using GitHub, and foster a supportive community that encourages knowledge sharing and professional growth.
 
 ## How to Contribute
+
 
 We welcome contributions from the open-source community to make GitCollabX even better! If you want to contribute to the project, follow these simple steps:
 
