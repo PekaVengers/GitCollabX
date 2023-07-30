@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Graduate&family=Hammersmith+One&family=Jost:wght@600&display=swap');
+
 img.profile{
   border-radius: 50%;
 }
@@ -7,6 +10,7 @@ img.profile{
   width: 53%;
 }
 
+
 /* CSS for the projects page container */
 .projects-page-container {
   margin: 20px;
@@ -15,9 +19,10 @@ img.profile{
 /* CSS for the heading */
 .projects-page-title {
   text-align: center;
-  font-size: 3rem;
+  font-size: 4rem;
   color: black;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  font-family: Graduate;
 }
 
 /* CSS for the projects container */
@@ -35,9 +40,9 @@ img.profile{
   width: 100%;
   max-width: 500px;
   padding: 15px;
-  background-color: #f2f2f2;
+  background-color: black;
   border-radius: 10px;
-  margin: 5px; /* Spacing between projects */
+  margin: 25px; /* Spacing between projects */
   gap: 1rem;
 }
 
@@ -57,14 +62,20 @@ img.profile{
   text-decoration: none;
 }
 
+.project-name:hover{
+  text-decoration: none;
+}
+
 .project-repo-link {
   margin-left: auto;
 }
 
 /* CSS for the GitHub link icon */
 .project-row-1 a {
-  color: #007bff;
-  font-size: 24px;
+  color: white;
+  font-size: 30px;
+  font-weight: bolder;
+  font-family: 'Gowun Dodum', sans-serif;
 }
 
 /* CSS for project tech stack */
@@ -75,11 +86,16 @@ img.profile{
   padding: 5px 10px;
   margin-right: 5px;
   border-radius: 5px;
+  font-weight: 700;
+  font-family: Graduate;
 }
 
 /* CSS for project progress title */
 .progress-title {
-  font-size: 16px;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+  font-family: 'Gowun Dodum', sans-serif;
 }
 
 /* CSS for progress bar container */
@@ -167,6 +183,8 @@ img.profile{
   font-size: 16px;
   cursor: pointer;
   margin-left: 45%;
+  font-weight: bolder;
+  font-family: Graduate;
 }
 
 .add-project-btn:hover {
@@ -181,3 +199,9 @@ img.profile{
   background-color: #004080; /* Darken the color when button is clicked */
 }
 
+.project-tech-stack-title{
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: 'Gowun Dodum', sans-serif;
+}
