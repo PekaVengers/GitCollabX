@@ -18,6 +18,8 @@
   /* CSS for the outlet content */
   .outlet-content {
     flex: 1; /* Make the outlet take up the remaining vertical space */
+    margin: 0;
+    padding: 0;
   }
   
   /* CSS for the footer */

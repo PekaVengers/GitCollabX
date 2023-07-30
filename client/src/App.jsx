@@ -12,6 +12,7 @@ import ProjectCollaborators from './pages/project/ProjectCollaborators';
 import PullRequests from './pages/project/PullRequests';
 import ProjectCodebase from './pages/project/ProjectCodebase';
 import Premium from './pages/Premium';
+import PremiumRequired from './pages/PremiumRequired';
 
 
 const router = createBrowserRouter(createRoutesFromElements(
@@ -27,6 +28,7 @@ const router = createBrowserRouter(createRoutesFromElements(
         <Route path="collaborators" element={<ProjectCollaborators />} />
         <Route path="pulls" element={<PullRequests />} />
         <Route path="codebase" element={<ProjectCodebase />} />
+        <Route path="premium_required" element={<PremiumRequired />} />
       </Route>
       <Route path="premium" element={<Premium />} />
     </Route>

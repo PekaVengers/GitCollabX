@@ -1,10 +1,11 @@
 .project-nav {
   background-color: #000;
   height: 10vh;
-  border: 3px solid white;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .projectFeatureBtn {
