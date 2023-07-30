@@ -41,30 +41,27 @@
 }
 
 /* CSS for each discussion container (message) */
-.discussion-container {
+.discussion-container{
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.discussionMessage {
   background-color: #d9d9d9; /* Light gray background for chat-style boxes */
   color: #000; /* Black text color for better readability */
   border-radius: 15px; /* Round corners for chat-style boxes */
   padding: 10px 15px;
-  margin-bottom: 10px;
   width: fit-content;
   max-width: 80%; /* Limit the maximum width of the message box */
+  margin: .3rem 0;
 }
 
-/* Align sent messages to the right */
-.discussion-container.sent {
-  align-self: flex-end;
-  background-color: rgba(217, 217, 217, 0.2);
-  /* Blue background for the sender's message */
-  color: #fff; /* White text color for the sender's message */
-}
-
-/* Align received messages to the left */
-.discussion-container.received {
-  align-self: flex-start;
-  background-color: rgba(217, 217, 217, 0.2);
-  /* Dark blue background for other users' messages */
-  color: #fff; /* White text color for other users' messages */
+.discussionAvatar{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
 }
 
 /* CSS to create spacing between message boxes */
