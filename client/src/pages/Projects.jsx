@@ -64,7 +64,7 @@ export default function Projects() {
       {
         !showForm
           ? <>
-            <button className="add-project-btn" onClick={() => setShowForm(true)}>Add project</button>
+            <button className="add-project-btn" onClick={() => setShowForm(true)}>Add Project</button>
             <div className="projects-container">
               {
                 currentProjects.map(project => {
