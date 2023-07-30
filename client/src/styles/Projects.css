@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Graduate&family=Hammersmith+One&family=Jost:wght@600&display=swap');
 /* CSS for the projects page container */
 .projects-page-container {
   margin: 20px;
@@ -74,13 +75,15 @@
   margin-right: 5px;
   border-radius: 5px;
   font-weight: 700;
+  font-family: Graduate;
 }
 
 /* CSS for project progress title */
 .progress-title {
-  font-size: 15px;
+  font-size: 20px;
   color: #fff;
   font-weight: 600;
+  font-family: 'Gowun Dodum', sans-serif;
 }
 
 /* CSS for progress bar container */
@@ -169,6 +172,7 @@
   cursor: pointer;
   margin-left: 45%;
   font-weight: bolder;
+  font-family: Graduate;
 }
 
 .add-project-btn:hover {
@@ -187,4 +191,5 @@
   color: #fff;
   font-weight: 600;
   font-size: 18px;
+  font-family: 'Gowun Dodum', sans-serif;
 }
