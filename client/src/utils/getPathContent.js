@@ -7,7 +7,6 @@ export default async function getPathContent (owner, repo, path="") {
           repo,
           path,
       });
-      console.log(content);
       return content.data;
   } catch (error) {
       console.error('Error fetching user repository:', error);

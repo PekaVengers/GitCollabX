@@ -1,7 +1,6 @@
 import {octokit} from "./getOctokit";
 
-export default async function fetchPullRequests(user, repo) {
-  const username = "kailashchoudhary11";
+export default async function fetchPullRequests(username, repo) {
   try {
       const prs = await octokit.rest.search.issuesAndPullRequests({
           q: `type:pr+repo:${username}/${repo}+created:>=2022-01-01`,

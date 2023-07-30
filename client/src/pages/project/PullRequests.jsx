@@ -1,21 +1,27 @@
 import { useState, useEffect } from "react";
 import fetchPullRequests from "../../utils/getPulls";
 import { useAuth0 } from "@auth0/auth0-react";
-import { Link } from "react-router-dom";
-import "../../styles/PullRequests.css"
+import { Link, useParams } from "react-router-dom";
+import "../../styles/PullRequests.css";
+import projectsData from "../../db/projects.json";
 
 export default function PullRequests() {
   const [pullRequests, setPullRequests] = useState([]);
   const { user } = useAuth0();
+  const params = useParams();
+  const projects = JSON.parse(localStorage.getItem("projects")) || projectsData;
+  const projectId = params.id;
+  const githubRepo = projects[projectId-1].githubRepo;
 
   useEffect(() => {
     async function setData() {
-      const data = await fetchPullRequests(user.nickname, "ideator");
+      console.log(githubRepo)
+      const data = await fetchPullRequests(user.nickname, githubRepo);
       console.log(data)
       setPullRequests(data);
     }
     setData();
-  }, [user]);
+  }, [user, githubRepo]);
 
   
   return (
