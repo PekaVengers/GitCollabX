@@ -8,7 +8,7 @@ const Premium = () => {
   return (
     <div className="row-pay">
       <div className="col-75">
-        <div className="container">
+        <div className="premium-container">
           <form method="post" className="paymentForm">
             <div className="row-pay">
               <div className="col-50">
