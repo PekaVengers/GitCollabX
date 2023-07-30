@@ -3,8 +3,23 @@ import "../styles/Premium.css";
 import { BsPersonCircle } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import { FaAddressCard, FaCity } from "react-icons/fa";
+import { redirect, useNavigate } from "react-router";
+import { useSearchParams } from "react-router-dom";
 
 const Premium = () => {
+  const navigate = useNavigate();
+  const [searchParams, setSearchParams] = useSearchParams();
+
+  function handlePayment() {
+    localStorage.setItem("hasPremium", "1");
+    const path = searchParams.get("path");
+    if (path) {
+      setSearchParams("");
+      return navigate(path);
+    } else {
+      return redirect("/profile");
+    }
+  }
   return (
     <div className="row-pay">
       <div className="col-75">
@@ -121,7 +136,7 @@ const Premium = () => {
                 </div>
               </div>
             </div>
-            <input type="submit" value="MAKE PAYMENT" className="btn" />
+            <button type="submit" className="btn" onClick={handlePayment}>Make Payment</button>
           </form>
         </div>
       </div>
