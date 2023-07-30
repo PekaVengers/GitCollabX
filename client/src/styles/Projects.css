@@ -1,4 +1,16 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Graduate&family=Hammersmith+One&family=Jost:wght@600&display=swap');
+
+img.profile{
+  border-radius: 50%;
+}
+
+.profile-heading{
+  color: #000;
+  width: 53%;
+}
+
+
 /* CSS for the projects page container */
 .projects-page-container {
   margin: 20px;

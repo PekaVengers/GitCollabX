@@ -5,7 +5,7 @@ export default function Collaborate() {
   
   return (
     <div className="collaborate-container">
-      <h1>Find Collaborators for your project</h1>
+      <h1 className="collaborate-heading">Find Collaborators for your project</h1>
       {users.map((user, index) => {
         return (
           <div key={index} className="collaborate-card">

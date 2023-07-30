@@ -57,7 +57,7 @@ export default function UserProfile() {
           </div>
           <div className="userDetails">
             <div className="profileText">
-              <h1>Profile</h1>
+              <h1 className="profile-heading">Profile</h1>
             </div>
             <div className="details">
 

@@ -2,7 +2,6 @@ import '../styles/Sidebar.css'
 import img from '../assets/images/logo.png'
 import {BsPersonCircle,BsFillChatLeftDotsFill,BsLink,BsShieldFillCheck} from 'react-icons/bs'
 import {HiDocumentText} from 'react-icons/hi'
-import {MdOutlineGroups} from 'react-icons/md'
 import { NavLink } from 'react-router-dom'
 import LogoutButton from './LogoutButton'
 
@@ -17,7 +16,7 @@ export default function Sidebar() {
         <NavLink style={({isActive}) => isActive ? ({textDecoration: "none",}) : ({})} className={`sidebar-nav-link`} to="/discussion"><BsFillChatLeftDotsFill className="sidebar-nav-icon"/> <span>DISCUSSION</span></NavLink>
         <NavLink style={({isActive}) => isActive ? ({textDecoration: "none",}) : ({})} className={`sidebar-nav-link`} to="/collaborate"><BsLink className="sidebar-nav-icon"/> <span>COLLABORATE</span></NavLink>
         <NavLink style={({isActive}) => isActive ? ({textDecoration: "none",}) : ({})} className={`sidebar-nav-link`} to="/projects"><HiDocumentText className="sidebar-nav-icon"/> <span>PROJECTS</span></NavLink>
-        <NavLink style={({isActive}) => isActive ? ({textDecoration: "none",}) : ({})} className={`sidebar-nav-link`} to="/"><MdOutlineGroups className="sidebar-nav-icon"/> <span>SKILL BARTERING</span></NavLink>
+        {/* <NavLink style={({isActive}) => isActive ? ({textDecoration: "none",}) : ({})} className={`sidebar-nav-link`} to="/"><MdOutlineGroups className="sidebar-nav-icon"/> <span>SKILL BARTERING</span></NavLink> */}
         <NavLink style={({isActive}) => isActive ? ({textDecoration: "none",}) : ({})} className={`sidebar-nav-link`} to="/premium"><BsShieldFillCheck className="sidebar-nav-icon"/> <span>BUY PREMIUM</span></NavLink>
         <LogoutButton />
       </div>

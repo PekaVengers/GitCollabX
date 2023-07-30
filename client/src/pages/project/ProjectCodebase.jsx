@@ -2,8 +2,20 @@ import { useState, useEffect } from 'react';
 import { useAuth0 } from "@auth0/auth0-react";
 import getPathContent from '../../utils/getPathContent';
 import "../../styles/ProjectCodebase.css";
-import { useParams } from 'react-router-dom';
+import { redirect, useParams } from 'react-router-dom';
 import projectsData from "../../db/projects.json";
+
+export function loader({request}) {
+  // localStorage.clear();
+  const url = new URL(request.url);
+  const path = url.pathname;
+  const redirectPath = path.slice(0, path.lastIndexOf("/")) + `/premium_required?path=${path}`;
+  const hasPremium = localStorage.getItem("hasPremium");
+  if (!hasPremium) {
+    return redirect(redirectPath);
+  }
+  return null;
+}
 
 export default function ProjectCodebase() {
 
