@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "../styles/Discussion.css";
+import profile from "../assets/images/discussionAvatar.png";
 
 export default function Discussion() {
   const [discussionMessages, setDiscussionMessages] = useState(JSON.parse(localStorage.getItem("discussionItems")) || [
@@ -43,7 +44,7 @@ export default function Discussion() {
                 }
               >
                 <div className="discussionAvatar">
-                  
+                  <img className="profile-image" src={profile} />
                 </div>
                 <div className="discussionMessage">
                 {discussion}
