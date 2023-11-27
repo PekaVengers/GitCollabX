@@ -1,5 +1,4 @@
 import { createBrowserRouter, createRoutesFromElements, RouterProvider, Route } from 'react-router-dom'
-import './App.css'
 import Home from './pages/Home';
 import Layout from './components/Layout';
 import Profile from './pages/Profile';

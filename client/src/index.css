@@ -1,10 +1,19 @@
-body{
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+}
+
+body {
   min-height: 100vh;
 }
 
-.root{
+.root {
   min-height: 100%;
 }
