@@ -18,3 +18,13 @@ body {
 .root {
   min-height: 100%;
 }
+
+::selection {
+  color: black;
+  background: white;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: black;
+  background: white;
+}

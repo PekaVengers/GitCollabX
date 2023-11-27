@@ -13,6 +13,7 @@ export default {
         para: "Gowun Dodum"        
       },
       screens: {
+        'msm' : '591px',
         'vsm': '406px',
         'vvsm': '100px',
       },
