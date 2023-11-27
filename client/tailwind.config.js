@@ -8,9 +8,12 @@ export default {
         secondary: '#92EEE8',
       },
       fontFamily: {
-        primary: 'IBM Plex Mono',
+        primary: 'Graduate',
+        primaryBold:  "Gowun Batang",
+        para: "Gowun Dodum"        
       },
       screens: {
+        'msm' : '591px',
         'vsm': '406px',
         'vvsm': '100px',
       },
